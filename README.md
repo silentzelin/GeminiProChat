@@ -104,6 +104,22 @@ You can control the website through environment variables.
     pnpm run dev
    ```
 
+## V8 Analyzer CLI
+
+This repository also contains a lightweight Python helper for analyzing v8 式号码走势。
+
+- Entry point: `scripts/v8_analyzer.py`
+- Input format: comma-separated numbers within **1–10** (latest issue at the end), e.g. `3,4,2,5,9,9,10,9,3,2`
+
+Examples:
+
+```bash
+python scripts/v8_analyzer.py "3,4,2,5,9,9,10,9,3,2"
+python scripts/v8_analyzer.py "1,10,1,10,1,10" --format table
+```
+
+The analyzer outputs segment labels, 3/5/10-period statistics (大小、奇偶节奏、012路分布、震荡率), the 小号/大号世界判定，以及最新一期的行为标签（延续/补缺/假段/断点）。
+
 ## Acknowledgements
 
 This project is inspired by and based on the following open-source project:
