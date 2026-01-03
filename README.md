@@ -3,6 +3,48 @@
 English | [中文](README_cn.md) | [Italiano](README_it.md)
 
 Minimal web UI for Gemini Pro Chat.
+---
+
+# Lucky10 桌面可视化工具
+
+本仓库额外提供一个 Windows 桌面软件示例（`main.py`），用于“澳洲幸运10”数据可视化与“前五不定位·独胆”统计输出。
+
+## 运行环境
+
+- Windows 10/11
+- Python 3.10+
+
+## 快速启动
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+```
+
+## 数据格式
+
+支持以下三种格式（空格/逗号皆可）：
+
+1. `期号 + 10个数字`（范围 1–10）
+2. `期号 + 10位数字串`（0–9 全排列，0 会映射为 10）
+3. `仅 10个数字`（无期号）
+
+## 打包（PyInstaller）
+
+直接运行 `build.bat` 即可在 `dist/Lucky10Visualizer` 输出 onedir 版本：
+
+```bash
+build.bat
+```
+
+## 配置说明
+
+`config.json` 里可配置默认数据文件、监控开关、去抖时间、显示期数等参数。
+
+---
+
 
 Live demo: [Gemini Pro Chat](https://www.geminiprochat.com)
 

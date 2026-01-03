@@ -1,0 +1,9 @@
+{
+  "file_path": "",
+  "monitor": true,
+  "debounce_ms": 300,
+  "recent_n": 2000,
+  "mode": "偏温",
+  "chart_type": "前五滚动频次(20)",
+  "selected_number": 1
+}
